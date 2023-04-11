@@ -1,0 +1,39 @@
+#!/bin/bash
+#addition of a and b
+read -p 'Enter a :' a
+read -p 'Enter b :' b
+add=$((a + b))
+#we can also use echo Sum is: $add
+echo "Sum is: $add"
+
+#subtraction of a and b
+read -p 'Enter a :' a
+read -p 'Enter b :' b
+add=$((a - b))
+echo "Difference is: $add"
+
+#Multiplication of a and b
+read -p 'Enter a :' a
+read -p 'Enter b :' b
+add=$((a * b))
+echo "multiplication is: $add"
+
+#Division of a and b
+read -p 'Enter a :' a
+read -p 'Enter b :' b
+add=$((a / b))
+echo "Division is: $add"
+
+#Modulus of a and b
+read -p 'Enter a :' a
+read -p 'Enter b :' b
+add=$((a % b))
+echo "mod is: $add"
+
+#increment and decrement
+read -p 'Enter a :' a
+read -p 'Enter b :' b
+((++a))
+echo $a
+((--b))
+echo $b
