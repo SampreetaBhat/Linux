@@ -1,0 +1,30 @@
+#!/bin/bash
+echo
+#The top utility is a commonly used tool for displaying system-performance information. It dynamically shows administrators which processes are consuming processor and memory resources
+top
+echo
+#A free command can display the total amount of free and used physical memories, and swap memory in the system, as well as the buffers that used by the kernel
+free -m
+echo
+#By default, the df command shows the disk space in 1-kilobyte blocks and the size of used and available disk space in kilobytes. 2. To display information about disk drives in human-readable format
+df -h
+echo
+# The current time, how long the system has been running, how many users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.
+uptime
+echo
+#The iostat command in Linux is used for monitoring system input/output statistics for devices and partitions. It monitors system input/output by observing the time the devices are active in relation to their average transfer rates.
+<<comment
+iostat: Get report and statistic.
+iostat -x: Show more details statistics information.
+iostat -c: Show only the cpu statistic.
+iostat -d: Display only the device report.
+iostat -xd: Show extended I/O statistic for device only.
+iostat -k: Capture the statistics in kilobytes or megabytes.
+iostat -k 2 3: Display cpu and device statistics with delay.
+iostat -j ID mmcbkl0 sda6 -x -m 2 2: Display persistent device name statistics.
+iostat -p: Display statistics for block devices.
+iostat -N: Display lvm2 statistic information.
+comment
+echo
+iostat
+echo
