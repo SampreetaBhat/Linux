@@ -1,0 +1,14 @@
+#!/bin/bash
+echo choose the below options
+echo a= display date and time
+echo b= list files
+rporate_internet
+echo c= list users logged in
+read choice
+case $choice in
+a) date;;
+b) ls;;
+c) who;;
+*) echo invalid choice
+
+esac
